@@ -224,9 +224,9 @@ const Table = () => {
                 {getId === index && (
                   <section
                     data-aos="fade-up"
-                    className="w-full h-fit bg-[#181e29]  lg:hidden max-lg:visible"
+                    className="max-w-[330px] h-fit  lg:hidden max-lg:visible"
                   >
-                    <div className="flex  flex-col  justify-between  w-full gap-2  px-4 py-3">
+                    <div className="flex  flex-col  justify-between max-w-sm gap-2  px-4 py-3">
                       <section className="flex  flex-col  ">
                         <h1 className="text-[#c9ced6] font-bold  ">
                           Original Link:
