@@ -62,13 +62,13 @@ const InputUrl = () => {
 
             <button
               type="submit"
-              className="h-[53px] w-40 rounded-full font-semibold bg-[#144ee3] absolute right-2 top-2  shadow-custom"
+              className="h-[53px] w-40 rounded-full font-semibold bg-[#144ee3] absolute right-2 top-2  max-sm:top-[80px] max-sm:right-0 max-sm:w-full  shadow-custom"
             >
               Shorten Now!
             </button>
           </form>
         </section>
-        <section className="flex  items-center gap-5 select-none">
+        <section className="flex  items-center gap-5 select-none max-sm:mt-14">
           <div
             onClick={handleToggleCopyClipboard}
             className="w-12 h-6 rounded-full bg-[#181e29] relative border border-[#323e59] cursor-pointer"

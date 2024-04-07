@@ -85,7 +85,7 @@ const Table = () => {
   };
 
   return (
-    <table className="text-white p-4 mx-10 mt-10 center w-[90%] max-md:w-[100%] table-auto ml-auto mr-auto">
+    <table className="text-white p-4 mx-10 mt-10 center w-[90%] max-md:w-[100%] table-auto ml-auto mr-auto max-sm:mt-20">
       <thead>
         <tr className="text-left bg-[#181e29] text-[#C9CED6]">
           <th className="p-4 w-[300px]  ">Short Link</th>
