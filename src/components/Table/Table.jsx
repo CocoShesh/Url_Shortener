@@ -4,6 +4,7 @@ import { getQRCode, getNumberOfClicks } from "../Api/Shortener";
 import { useUrl } from "../context/UrlContext";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LazyLoad from "react-lazy-load";
 
 const Table = () => {
   const [previewImages, setPreviewImages] = useState([]);
@@ -165,30 +166,36 @@ const Table = () => {
                   <span className="flex items-center gap-3 mr-10 lg:w-[250px] overflow-hidden  text-ellipsis   ">
                     {filtered?.length > 0 ? (
                       filtered?.map((image, index) => (
-                        <img
-                          src={image?.data?.logo?.url}
-                          alt=""
-                          className="w-5 h-5 rounded-full"
-                          key={index}
-                        />
+                        <LazyLoad height={20} key={index}>
+                          <img
+                            src={image?.data?.logo?.url}
+                            alt=""
+                            className="w-5 h-5 rounded-full"
+                            key={index}
+                          />
+                        </LazyLoad>
                       ))
                     ) : (
-                      <img
-                        src="/world-wide-web.png"
-                        alt="Preview Image Placeholder"
-                        className="w-5 h-5 rounded-full"
-                      />
+                      <LazyLoad height={20}>
+                        <img
+                          src="/world-wide-web.png"
+                          alt="Preview Image Placeholder"
+                          className="w-5 h-5 rounded-full"
+                        />
+                      </LazyLoad>
                     )}
                     {item?.long_url}
                   </span>
                 </td>
                 <td className="   max-lg:hidden ">
                   <span className="flex items-center mr-5 justify-center">
-                    <img
-                      src={item?.qr_code_url}
-                      alt=""
-                      className="w-7   opacity-35"
-                    />
+                    <LazyLoad height={28} threshold={0.95}>
+                      <img
+                        src={item?.qr_code_url}
+                        alt=""
+                        className="w-7   opacity-35"
+                      />
+                    </LazyLoad>
                   </span>
                 </td>
                 <td className="p-4 text-sm   max-lg:hidden ">
