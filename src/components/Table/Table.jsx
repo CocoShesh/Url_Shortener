@@ -224,14 +224,14 @@ const Table = () => {
                 {getId === index && (
                   <section
                     data-aos="fade-up"
-                    className="max-w-[330px] h-fit  lg:hidden max-lg:visible"
+                    className=" h-fit bg-[#181e29] py-2   lg:hidden max-lg:visible"
                   >
-                    <div className="flex  flex-col  justify-between max-w-sm gap-2  px-4 py-3">
+                    <div className="flex  flex-col  justify-between  gap-2 w-full   ">
                       <section className="flex  flex-col  ">
-                        <h1 className="text-[#c9ced6] font-bold  ">
-                          Original Link:
-                        </h1>
-                        <section className="flex items-center gap-2   ">
+                        <div className="text-[#c9ced6] h-10 pl-2 pt-1 font-bold   ">
+                          Original Link
+                        </div>
+                        <section className="flex items-center gap-2 pl-3  ">
                           {filtered?.length > 0 ? (
                             filtered?.map((image, index) => (
                               <img
@@ -253,7 +253,7 @@ const Table = () => {
                           </span>
                         </section>
                       </section>
-                      <section className="flex gap-3">
+                      <section className="flex  flex-col gap-3 pl-3 ">
                         <h1 className="text-[#c9ced6] font-bold">Qr Code: </h1>
                         <img
                           src={item?.qr_code_url}
@@ -261,7 +261,7 @@ const Table = () => {
                           className="w-7 opacity-35"
                         />
                       </section>
-                      <section className="flex gap-3">
+                      <section className="flex gap-3 pl-3">
                         <h1 className="text-[#c9ced6] font-bold">Clicks: </h1>
                         {filteredNumberOfClicks?.map((items, index) => {
                           return (
@@ -271,7 +271,7 @@ const Table = () => {
                           );
                         })}
                       </section>
-                      <span className="flex items-center gap-3 ">
+                      <span className="flex items-center gap-3 pl-3 ">
                         <h1 className="text-[#c9ced6] font-bold">Status: </h1>
                         <span className="flex items-center gap-3 mr-10 justify-between ">
                           {filteredStatus ? "Inactive" : "Active"}
@@ -283,7 +283,7 @@ const Table = () => {
                           />
                         </span>
                       </span>
-                      <section className="flex items-center gap-3 ">
+                      <section className="flex items-center gap-3 pl-3 ">
                         <h1 className="text-[#c9ced6] font-bold">Date: </h1>
                         <span className="text-[#C9CED6]">
                           {formatedData(item?.created_at)}
