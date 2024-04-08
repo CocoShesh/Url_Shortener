@@ -98,7 +98,7 @@ const Table = () => {
       </thead>
       <tbody className="relative">
         {isLoading ? (
-          <section className="w-full h-[300px]  absolute top-1 left-1 flex items-center justify-center bg-[#181e29]">
+          <section className="w-full h-[300px]  absolute top-1 left-0 flex items-center justify-center bg-[#181e29]">
             <div class="custom-loader"></div>
           </section>
         ) : data.length === 0 ? (
@@ -224,9 +224,9 @@ const Table = () => {
                 {getId === index && (
                   <section
                     data-aos="fade-up"
-                    className=" h-fit bg-[#181e29] py-2   lg:hidden max-lg:visible"
+                    className="w-full  h-fit bg-[#181e29] py-2   lg:hidden max-lg:visible"
                   >
-                    <div className="flex  flex-col  justify-between  gap-2 w-full   ">
+                    <div className="flex  flex-col  justify-between  gap-2  w-[250px]  ">
                       <section className="flex  flex-col  ">
                         <div className="text-[#c9ced6] h-10 pl-2 pt-1 font-bold   ">
                           Original Link
