@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <nav className="flex items-center justify-between text-white">
+      <nav className="flex items-center justify-between text-white lg:px-5 max-lg:px-0">
         <img src="/Linkly.svg" alt="" />
         {/* <section className="flex items-center  justify-center gap-5">
           <button className="flex items-center gap-2 h-14 w-28 justify-center rounded-full border border-[#252b37] bg-[#181e29]">

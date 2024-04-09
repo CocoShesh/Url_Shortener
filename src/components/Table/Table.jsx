@@ -208,7 +208,7 @@ const Table = () => {
                   })}
                 </td>
                 <td className="p-4 text-sm  max-lg:hidden">
-                  <span className="flex items-center gap-3 mr-10 justify-between ">
+                  <span className="flex items-center gap-3 mr-10 ">
                     {filteredStatus ? "Inactive" : "Active"}
                     <img
                       src={filteredStatus ? "/inactive.svg" : "/active.svg"}
