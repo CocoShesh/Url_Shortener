@@ -3,10 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      screens: {
-        sm: "430px",
-        xs: "380px",
-      },
+      // screens: {
+      //   xs: "390px",
+      //   sm: "640px",
+      // },
       backgroundImage: {
         cubes: "url('/Cubes.png')",
       },

@@ -162,8 +162,8 @@ const Table = () => {
                     />
                   )}
                 </div>
-                <td className="p-4 text-sm max-lg:hidden  ">
-                  <span className="flex items-center gap-3 mr-10 lg:w-[250px] overflow-hidden  text-ellipsis   ">
+                <td className="p-4 text-sm max-lg:hidden   ">
+                  <span className="flex items-center gap-5 mr-10 overflow-hidden  text-ellipsis  w-[300px]  ">
                     {filtered?.length > 0 ? (
                       filtered?.map((image, index) => (
                         <LazyLoad height={20} key={index}>
@@ -184,7 +184,7 @@ const Table = () => {
                         />
                       </LazyLoad>
                     )}
-                    {item?.long_url}
+                    <span className="line-clamp-2"> {item?.long_url}</span>
                   </span>
                 </td>
                 <td className="   max-lg:hidden ">

@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import { useUrl } from "../context/UrlContext";
 import InputModal from "../modal/Modal";
 import { useEffect } from "react";
+import { UserInputSchema } from "../schema/UserInputSchema";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 const InputUrl = () => {
   const [toggleCopyClipboard, setToggleCopyClipboard] = useState(false);
@@ -14,7 +16,10 @@ const InputUrl = () => {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm();
+  } = useForm({
+    resolver: zodResolver(UserInputSchema),
+    long_url: "",
+  });
 
   const handleToggleCopyClipboard = () => {
     setToggleCopyClipboard(prev => !prev);
@@ -57,7 +62,11 @@ const InputUrl = () => {
               className=" h-[70px] w-[530px] max-md:w-full rounded-full  border-4 border-[#323e59] bg-[#181e29] px-14  outline-none"
               {...register("long_url", { required: true })}
             />
-
+            {errors.long_url && (
+              <p className=" text-red-500 text-sm mb-3">
+                {errors.long_url.message}
+              </p>
+            )}
             <img src="/link.svg" alt="" className="absolute top-7 left-5" />
 
             <button

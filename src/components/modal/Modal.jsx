@@ -31,7 +31,7 @@ const InputModal = ({ userInput, copiedLink }) => {
 
   useEffect(() => {
     setValue("long_url", userInput);
-    setValue("expire_at_views", 2);
+    setValue("expire_at_views", 50);
   }, [userInput]);
   return (
     <>
@@ -66,10 +66,11 @@ const InputModal = ({ userInput, copiedLink }) => {
           </section>
 
           {/* password */}
-          <section className="flex gap-3 items-center">
-            <section className="w-full">
-              <label htmlFor="Password" className="text-2xl">
-                Password <span className="text-[#323e59] "> (Optional)</span>
+          <section className="flex  max-sm:flex-col gap-3 items-center">
+            <section className="w-full ">
+              <label htmlFor="Password" className="text-xl ">
+                Password{" "}
+                <span className="text-[#323e59] "> {"  "} (Optional)</span>
               </label>
               <section className="relative">
                 <input
@@ -87,9 +88,9 @@ const InputModal = ({ userInput, copiedLink }) => {
               </section>
             </section>
             {/* expired */}
-            <section className="w-[200px] text-center mt-2">
-              <label htmlFor="views" className="text-sm  uppercase ">
-                Expired at views
+            <section className="w-[200px] mt-2 max-sm:mt-0 select-none  max-sm:w-full">
+              <label htmlFor="views" className="   ">
+                Expire after views
               </label>
               <section className="relative">
                 <input
@@ -97,13 +98,13 @@ const InputModal = ({ userInput, copiedLink }) => {
                   id="views"
                   {...register("expire_at_views")}
                   disabled={true}
-                  className="bg-[#181e29]  select-none border-4 border-[#323e59] placeholder:font-sans my-3  text-xl text-center placeholder:text-lg outline-none w-full h-14 rounded-2xl px-2"
+                  className="bg-[#181e29] brightness-75   select-none border-4 border-[#323e59] placeholder:font-sans my-3  text-xl text-center placeholder:text-lg outline-none w-full h-14 rounded-2xl px-2"
                 />
               </section>
             </section>
           </section>
           {/* description */}
-          <label htmlFor="Description" className="text-2xl">
+          <label htmlFor="Description" className="text-xl">
             Description
           </label>
           <section className="relative">

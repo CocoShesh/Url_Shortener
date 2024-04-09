@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@dhaiwat10/react-link-preview": "^1.15.0",
+    "@hookform/resolvers": "^3.3.4",
     "@microlink/mql": "^0.13.5",
     "aos": "3.0.0-beta.6",
     "axios": "^1.6.8",
@@ -20,7 +21,8 @@
     "react-hook-form": "^7.51.2",
     "react-lazy-load": "^4.0.1",
     "react-responsive-modal": "^6.4.2",
-    "react-tiny-link": "^3.6.1"
+    "react-tiny-link": "^3.6.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
