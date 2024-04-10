@@ -25,3 +25,11 @@ Linkly is an efficient and easy-to-use URL shortening service that streamlines y
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 - **Zod**: Runtime type checking for JavaScript.
 - **React Hook Form**: Library for managing form state and validation.
+
+Installation
+
+    Clone the repository.
+    Install dependencies using npm install.
+    Set up environment variables using dotenv.
+    Run the app with npm start.
+
