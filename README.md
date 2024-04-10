@@ -1,7 +1,9 @@
 Linkly - URL Shortener
 
-![Screenshot 1](https://github.com/CocoShesh/Url_Shortener/blob/main/assets/110368170/8ee6ab4e-9a75-46a1-a222-5684f3b3da98.png)
-![Screenshot 2](https://github.com/CocoShesh/Url_Shortener/blob/main/assets/110368170/a448842f-5812-4890-a3e9-a923558e5c5a.png)
+
+![Screenshot 2024-04-10 202307](https://github.com/CocoShesh/Url_Shortener/assets/110368170/a292a17e-cd66-4d0e-af37-393e29f8629c)
+![Screenshot 2024-04-10 202327](https://github.com/CocoShesh/Url_Shortener/assets/110368170/373ca7d1-3cd9-4c50-beca-cf6858644194)
+
 
 Linkly is an efficient and easy-to-use URL shortening service that streamlines your online experience. It provides various features to enhance user convenience.
 
